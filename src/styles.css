@@ -1,16 +1,21 @@
 body {
   font-family: Poppins, sans-serif;
-  background-color: rgb(83, 114, 105);
+  background-color: rgb(113, 153, 178);
 }
 
 .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+section {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url("../images/japan1-jpg.avif");
+    url("../images/Japan-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -20,7 +25,7 @@ header {
 }
 
 header h1 {
-  color: rgb(156, 54, 71);
+  color: rgb(143, 36, 54);
   font-weight: 700;
   font-size: 96px;
   line-height: 1;
@@ -49,7 +54,7 @@ header a {
   margin-top: 20px;
   margin-bottom: 40px;
   padding: 10px 20px;
-  background-color: rgb(156, 54, 71);
+  background-color: rgb(143, 36, 54);
   color: white;
   text-decoration: none;
   line-height: 1.5;
@@ -61,10 +66,47 @@ header a {
 footer {
   display: block;
   margin: auto;
-  text-align: center;
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url(../images/japan1-jpg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
 }
 
-@media (max-width: 900px) {
+footer h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+footer p {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
