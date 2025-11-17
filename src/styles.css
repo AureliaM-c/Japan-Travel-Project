@@ -1,6 +1,6 @@
 body {
   font-family: Poppins, sans-serif;
-  background-color: rgb(113, 153, 178);
+  background-color: rgb(207, 181, 59);
 }
 
 .container {
@@ -11,6 +11,7 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -18,7 +19,6 @@ header {
     url("../images/Japan-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
   margin: auto;
   text-align: center;
   padding: 200px 0;
@@ -63,6 +63,42 @@ header a {
   text-transform: uppercase;
 }
 
+.img-responsive {
+  max-width: 100%;
+}
+
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #272044;
+  opacity: 0.3;
+  margin: 0;
+}
+
+main h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+
 footer {
   display: block;
   margin: auto;
@@ -74,7 +110,6 @@ footer {
     url(../images/japan1-jpg.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -88,7 +123,6 @@ footer p {
   font-size: 14px;
   line-height: 18px;
   opacity: 0.7;
-  margin-right: 20px;
 }
 
 footer ul {
@@ -111,8 +145,15 @@ footer a {
 
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
-  gap: 40px;
 }
 
 @media (max-width: 960px) {
@@ -127,5 +168,14 @@ footer a {
   }
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+    grid-gap: 32px !important;
+  }
+
+  section {
+    padding: 30px;
   }
 }
